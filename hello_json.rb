@@ -11,7 +11,7 @@ require 'goliath'
 require 'yajl'
 
 class HelloJson < Goliath::API
-  use Goliath::Rack::Render
+  use Goliath::Rack::Render, 'json'
   use Goliath::Rack::Formatters::JSON
 
   def response(env)

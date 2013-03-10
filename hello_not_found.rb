@@ -16,7 +16,7 @@ class HelloNotFound < Goliath::API
 
   def response(env)
 
-    if env.params['found'] == 'false'
+    if params['found'] == 'false'
       logger.error "four oh four™"
       raise Goliath::Validation::NotFoundError
     else

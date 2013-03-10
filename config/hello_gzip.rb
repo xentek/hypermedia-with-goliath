@@ -1,2 +1,2 @@
-import('global')
+import('shared')
 config['hello'] = 'SXSW'
